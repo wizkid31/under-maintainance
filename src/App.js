@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+//react import
+import React from "react";
 
-function App() {
+//bootstrap
+import { Container, Row, Col } from "react-bootstrap";
+
+//styles import
+import Styles from "./App.module.scss";
+
+//image import
+import um from "./images/um1.png";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className={Styles.appContainer}>
+      <Row className={Styles.row1} xl={12} lg={12} md={12} sm={12}>
+        <img className={Styles.underMaintainance} src={um} />
+      </Row>
+    </Container>
   );
-}
+};
 
 export default App;
