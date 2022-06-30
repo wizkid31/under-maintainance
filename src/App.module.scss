@@ -1,66 +1,17 @@
-.appContainer {
-  overflow: hidden;
-  .row1 {
-    width: 100%;
-    overflow: hidden;
-    padding: 4rem 0rem;
-    .underMaintainance {
-      overflow: hidden;
-      width: 60%;
-      margin: 0rem 18rem;
-    }
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-  .row1 {
-    padding: 8rem 0rem !important;
-    .underMaintainance {
-      margin: 0rem 12rem !important;
-    }
-  }
-}
-@media screen and (max-width: 992px) and (min-width: 654px) {
-  .row1 {
-    padding: 8rem 0rem !important;
-    .underMaintainance {
-      width: 70% !important;
-      margin: 0rem 8rem !important;
-    }
-  }
-}
-@media screen and (max-width: 654px) {
-  .row1 {
-    padding: 8rem 0rem !important;
-    .underMaintainance {
-      width: 80% !important;
-      margin: 0rem 5rem !important;
-    }
-  }
-}
-@media screen and (max-width: 554px) {
-  .row1 {
-    padding: 8rem 0rem !important;
-    .underMaintainance {
-      width: 90% !important;
-      margin: 0rem 2.5rem !important;
-    }
-  }
-}
-@media screen and (max-width: 447px) {
-  .row1 {
-    padding-top: 11rem !important;
-    .underMaintainance {
-      margin: 0rem 2rem !important;
-    }
-  }
-}
-@media screen and (max-width: 385px) {
-  .row1 {
-    padding-top: 11rem !important;
-    .underMaintainance {
-      width: 100% !important;
-      margin: 0rem 0.5rem !important;
+@import "~bootstrap/scss/bootstrap";
+.container {
+  height: 100vh;
+  .row {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .col {
+      max-width: 50rem;
+      .underMaintainance {
+        max-width: 100%;
+      }
     }
   }
 }
